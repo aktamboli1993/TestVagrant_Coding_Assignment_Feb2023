@@ -1,0 +1,52 @@
+
+Code: 
+
+package Test1;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class InMemoryStrore {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Play Song: ");
+		String song1=sc.next();
+		
+		Queue<String> SongList=new LinkedList<String>();
+		SongList.add("S1");
+		SongList.add("S2");
+		SongList.add("S3");
+		
+		SongList.add(song1);
+		SongList.remove();
+		System.out.println("PlayList: "+SongList);
+		
+		System.out.println("Next Play Song: ");
+		String song2=sc.next();
+		SongList.add(song2);
+		SongList.remove();
+		System.out.println("PlayList: "+SongList);
+		
+		System.out.println("Next Play Song: ");
+		String song3=sc.next();
+		SongList.add(song3);
+		SongList.remove();
+		System.out.println("PlayList: "+SongList);
+		
+	}
+
+}
+
+Result OutPut: 
+
+Play Song: 
+S4
+PlayList: [S2, S3, S4]
+Next Play Song: 
+S2
+PlayList: [S3, S4, S2]
+Next Play Song: 
+S1
+PlayList: [S4, S2, S1]
