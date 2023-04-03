@@ -1,5 +1,5 @@
 
-Code: 
+//Code: 
 
 package Test1;
 
@@ -39,7 +39,7 @@ public class InMemoryStrore {
 
 }
 
-Result OutPut: 
+//Result OutPut: 
 
 Play Song: 
 S4
